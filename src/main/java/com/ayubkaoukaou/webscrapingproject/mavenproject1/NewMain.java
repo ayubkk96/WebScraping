@@ -16,7 +16,7 @@ public class NewMain {
      */
     public static void main(String[] args) throws Exception {
          
-        
+        System.out.println("Github test");
         /** Tell Spring to create and wire beans with annotations */
       ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         
