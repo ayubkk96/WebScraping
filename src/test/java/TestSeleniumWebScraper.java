@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.ayubkaoukaou.webscrapingproject.mavenproject1;
 
 import java.util.List;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,15 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-/**
- *
- * @author kaouk
- */
-public class SeleniumAsdaWebScraper {
-    
+
+
+@DisplayName ("Test SeleniumWebscraper")
+public class TestSeleniumWebScraper {
     
     @Test
-    public void showAsdaHTML(){
+    public void testShowAsdaHTML(){
         //We need an options class to run headless - not needed if we want default options
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
@@ -52,5 +45,6 @@ public class SeleniumAsdaWebScraper {
         //Exit driver and close Chrome
         driver.quit();
     }
+    
     
 }

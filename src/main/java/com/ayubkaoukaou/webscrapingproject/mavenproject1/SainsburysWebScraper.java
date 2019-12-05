@@ -76,7 +76,7 @@ public class SainsburysWebScraper extends WebScraper {
                  */
                 cheeseBean.setProductType(cheeseType);
                 cheeseBean.setId(CheeseTypes.getTypeId(cheeseType));
-
+               
                 /**
                  * Create price comparison bean
                  */

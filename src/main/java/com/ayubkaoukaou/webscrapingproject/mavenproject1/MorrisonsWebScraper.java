@@ -62,9 +62,7 @@ public class MorrisonsWebScraper extends WebScraper {
 
                 /** Output the data downloaded. */
                 System.out.println("DESCRIPTION: " + productDescriptions.text() + "; PRICE: " + priceDisplayed.text() + "; URL: " + absHref);
-                String subString = new String();
-                
-          
+               
                 /** Create a new cheese bean from the class 'Cheese'.
                  */
                 Cheese cheeseBean = new Cheese();
@@ -80,7 +78,7 @@ public class MorrisonsWebScraper extends WebScraper {
                  */
                 PriceComparison priceComparison = new PriceComparison();
                 priceComparison.setCheese(cheeseBean);
-                priceComparison.setPrice(Double.parseDouble(subString.substring(1, priceDisplayed.text().length() - 2)));
+                priceComparison.setPrice(2);
                 priceComparison.setDescription(productDescriptions.text());
                 priceComparison.setUrl(absHref);
                 priceComparison.setWeight(4);

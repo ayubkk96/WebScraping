@@ -22,12 +22,12 @@ public class ScraperManager {
     
     
     /** Create objects from the web scraping classes and add them to the scraper list. */
-    //SainsburysWebScraper sainsburysScraper = new SainsburysWebScraper();
-   // OcadoWebScraper ocadoWebScraper = new OcadoWebScraper();
+    SainsburysWebScraper sainsburysScraper = new SainsburysWebScraper();
+    OcadoWebScraper ocadoWebScraper = new OcadoWebScraper();
     MorrisonsWebScraper morrisonsWebScraper = new MorrisonsWebScraper();
     
-   // scraperList.add(sainsburysScraper);
-   // scraperList.add(ocadoWebScraper);
+    scraperList.add(sainsburysScraper);
+    scraperList.add(ocadoWebScraper);
     scraperList.add(morrisonsWebScraper);
     
     

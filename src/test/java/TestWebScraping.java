@@ -26,7 +26,7 @@ public class TestWebScraping {
     String item = "cheese";
 
             /** Download HTML document from website. */
-            Document doc = null;
+            Document doc = null;    
             try {
                 doc = Jsoup.connect("https://www.sainsburys.co.uk/webapp/wcs/stores/servlet/SearchDisplayView?catalogId=10241&storeId=10151&langId=44&krypto=Mx1Dv7IDyo0OEdCrdM2q7RNsJRU1mjfmqyular%2Fr%2BO54i%2BD1nJEPaMm4Rxy5IDedsMj17sgDhFdM93yuTLLEzd2xjAy8pQYiGhugaqOTQGA%3D#langId=44&storeId=10151&catalogId=10241&categoryId=&parent_category_rn=&top_category=&pageSize=60&orderB"
                         + "y=&searchTerm=cheese&beginIndex=0&hideFilters=true&categoryFacetId1=" + item).get();

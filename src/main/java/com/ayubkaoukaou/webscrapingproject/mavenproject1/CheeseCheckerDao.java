@@ -84,23 +84,17 @@ public class CheeseCheckerDao {
     }
      
      /**Search for the cheese */    
-     public void searchCheese(){
+     public void searchCheese(PriceComparison priceComparison){
+         
          Session session = sessionFactory.getCurrentSession();
          
          session.beginTransaction();
          
          List<PriceComparison> cheeseList = session.createQuery("from PriceComparison where price = 3").getResultList();
-         for(PriceComparison cheese: cheeseList) {
-             System.out.println(cheese.toString());
+         for(PriceComparison description: cheeseList) {
+             System.out.println(description.toString());
          }
          session.close();
-     }
-     
-     /** Update the cheese */;
-     public void updateCheese() {
-         
-         
-         
      }
      
      

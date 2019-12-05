@@ -22,10 +22,7 @@ abstract class WebScraper extends Thread implements CheeseTypes{
     CheeseCheckerDao cheeseCheckerDao = new CheeseCheckerDao();
     
     
-    
-    
-  
-    
+
   
     /** Stop scraping the websites if thread is true. */
     public void stopScraping() { 
